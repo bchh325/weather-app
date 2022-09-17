@@ -70,7 +70,7 @@ async function getData(zip) {
 }
 
 async function getCityData(cityKey) {
-    const resource = `https1://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${apikey}`
+    const resource = `https://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${apikey}`
 
     return getLocationData(resource)
     .then(data => data[0]);
